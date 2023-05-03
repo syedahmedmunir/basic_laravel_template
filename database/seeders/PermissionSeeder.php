@@ -17,7 +17,14 @@ class PermissionSeeder extends Seeder
     {
         
         $permissions=[
-            'User List'
+            'User List',
+            'User Create',
+            'User Edit',
+            'User Delete',
+            'Role List',
+            'Role Create',
+            'Role Edit',
+            'Role Delete',
         ];
 
         foreach($permissions as $permission){

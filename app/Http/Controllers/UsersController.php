@@ -63,7 +63,6 @@ class UsersController extends Controller
 
         return redirect()->route('user.index')->with('success','User Created Successfully');
 
-
     }
 
     public function edit($id){
