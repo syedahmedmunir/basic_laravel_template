@@ -25,15 +25,12 @@
             </a>
           </li><!-- End Dashboard Nav -->
 
-    
+          {{-- USERS START --}}
           <li class="nav-item">
-
-       
-              
-            <a class="nav-link collapsed {{ expandParentOnUrl('user') }}" data-bs-target="#components-nav" data-bs-toggle="collapse" href="#" >
+            <a class="nav-link collapsed {{ expandParentOnUrl('user') }}" data-bs-target="#components-users" data-bs-toggle="collapse" href="#" >
               <i class="bi bi-menu-button-wide"></i><span>Users</span><i class="bi bi-chevron-down ms-auto"></i>
             </a>
-            <ul id="components-nav" class="nav-content collapse" data-bs-parent="#sidebar-nav">
+            <ul id="components-users" class="nav-content collapse" data-bs-parent="#sidebar-nav">
               <li>
                 <a  class="{{ activeRoute('user.index') }}" href="{{ route('user.index') }}">
                   <i class="bi bi-circle"></i><span>Index</span>
@@ -45,14 +42,32 @@
                   <i class="bi bi-circle"></i><span>Create</span>
                 </a>
               </li>
-              
             </ul>
-
-
-
-
           </li>
-    
+          {{-- USERS END --}}
+
+          {{-- ROLE START --}}
+          <li class="nav-item">
+            <a class="nav-link collapsed {{ expandParentOnUrl('role') }}" data-bs-target="#components-roles" data-bs-toggle="collapse" href="#" >
+              <i class="bi bi-menu-button-wide"></i><span>Roles</span><i class="bi bi-chevron-down ms-auto"></i>
+            </a>
+            <ul id="components-roles" class="nav-content collapse" data-bs-parent="#sidebar-nav">
+              <li>
+                <a  class="{{ activeRoute('role.index') }}" href="{{ route('role.index') }}">
+                  <i class="bi bi-circle"></i><span>Index</span>
+                </a>
+              </li>
+
+              <li>
+                <a  class="{{ activeRoute('role.create') }}" href="{{ route('role.create') }}">
+                  <i class="bi bi-circle"></i><span>Create</span>
+                </a>
+              </li>
+            </ul>
+          </li>
+          {{-- ROLE END --}}
+
+
         </ul>
     
       </aside><!-- End Sidebar-->
